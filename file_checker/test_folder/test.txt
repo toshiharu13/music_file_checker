@@ -1,0 +1,5 @@
+Из папки проекта запустить команды(ресурс локально развернут)
+curl --location --request POST 'http://127.0.0.1:8000/api/v1/upload/' --form 'file=@"test_folder/molniya.wav"'
+curl --location --request POST 'http://127.0.0.1:8000/api/v1/upload/' --form 'file=@"test_folder/molniya.mp3"'
+curl --location --request POST 'http://127.0.0.1:8000/api/v1/upload/' --form 'file=@"test_folder/molniya_false.wav"'
+Первая команда - корректный запрос, вторая - звуковой файл отличного формата, третий запрос - файл имеет коректное расширение, но неявляется звуковым.

@@ -15,6 +15,7 @@ class GetFile(APIView):
     parser_classes = [MultiPartParser, FormParser]
 
     def post(self, request, *args, **kwargs):
+        MusicFile.objects.all().delete()
         uploaded_file_name = request.FILES['file'].name
         serializer = FileSerializer(data=request.data)
         if serializer.is_valid():
