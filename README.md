@@ -1,7 +1,7 @@
 # API сервис проверки файлов music_file_checker
 [![Python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
-
+[![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)](https://www.django-rest-framework.org/)
 ##  Данная программа принимает музыкальный файл POST запросом и проверяет его на корректность. Ожидаемое расширение регулируется настройкой(по умолчанию WAV)
 
 ## Как установить
@@ -35,9 +35,9 @@ python manage.py runserver
  - Сервер слушает POST запросы на http://server/api/v1/upload/ и принимает поле file с телом запроса(загружаемым файлом)
  - К примеру, локально развернутый сервер слушает на http://127.0.0.1:8000/api/v1/upload/
  - Динамическая документация по адресу http://server/redoc/
- - Примеры тестовых файлов и команд в папке testfolder
+ - Примеры тестовых файлов и команд в папке **test_folder**
 
-## Проект создан в качестве тестового задания
+## Проект создан в качестве тестового задания.
 
 
 
